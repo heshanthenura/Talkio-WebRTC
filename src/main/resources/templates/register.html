@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Talkio</title>
+    <link rel="stylesheet" th:href="@{/css/register.css}" />
+    <link rel="stylesheet" href="../static/css/register.css" />
+    </head>
+  <body>
+    <section id="name-section">
+      <form th:action="@{/registername}" id="register-form" th:method="post">
+        <h1>Enter Your Name</h1>
+        <span th:text="${errorMessage}" style="color: red"></span>
+        <input type="text" id="name" name="name" />
+        <button id="set-name-btn" type="submit">Enter</button>
+      </form>
+    </section>
+    <script th:src="@{/js/register.js}"></script>
+    <script src="../static/js/register.js"></script>
+  </body>
+</html>

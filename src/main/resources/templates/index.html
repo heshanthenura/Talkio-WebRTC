@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" th:href="@{/css/index.css}" />
+    <link rel="stylesheet" href="../static/css/index.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.6.1/sockjs.min.js" integrity="sha512-1QvjE7BtotQjkq8PxLeF6P46gEpBRXuskzIVgjFpekzFVF4yjRgrQvTG1MTOJ3yQgvTteKAcO7DSZI92+u/yZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js" integrity="sha512-iKDtgDyTHjAitUDdLljGhenhPwrbBfqTKWO1mkhSFH3A7blITC9MhYon6SjnMhp4o0rADGw9yAC6EW4t5a4K3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>Talkio</title>
+  </head>
+  <body>
+    <h1 id="title">Talkio</h1>
+    </section>
+    <p id="idTxt">ID: <span th:text="${ID}"></span></p>
+    <section id="videos">
+      <video class="video" id="remote-video"></video>
+      <video class="video" id="local-video"  autoplay></video>
+      <div id="chat">asgdh</div>
+    </section>
+    <section id="input-controls">
+      <button id="camera-btn" class="controlBtn">Camera</button>
+      <button id="microphone-btn" class="controlBtn">Audio</button>
+      <select name="camera" id="cameras" class="device-select"></select>
+      <select name="microphone" id="microphones" class="device-select"></select>
+    </section>
+    <section id="controls">
+      <button id="startBtn" class="controlBtn">Start</button>
+      <button id="stopBtn" class="controlBtn" >Stop</button>
+      <button id="nextBtn" class="controlBtn">Next</button>
+    </section>
+    <section><input type="text" name="remoteID" id="remoteId"><button id="callBtn"></button>Call</section>
+        <script src="../static/js/index.js"></script>
+         <script th:src="@{/js/index.js}"></script>
+  </body>
+</html>
